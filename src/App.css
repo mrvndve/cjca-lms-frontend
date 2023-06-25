@@ -1,0 +1,71 @@
+.App {
+  height: 100vh;
+  background-color: whitesmoke;
+}
+
+.login-page-container {
+  height: 100vh;
+}
+
+.welcome-back-page-container {
+  height: 100vh;
+}
+
+.input-container {
+	padding-bottom: 1em;
+}
+
+.right-inner-addon {
+  position: relative;
+}
+
+.right-inner-addon input {
+  padding-right: 35px !important;
+}
+
+.right-inner-addon .icon {
+  position: absolute;
+  right: 0px;
+  padding: 8px 13px;
+}
+
+.MuiTablePagination-root p {
+  margin-top: 15px !important;
+}
+
+.breadcrumbs-link:hover { 
+  color: inherit;
+}
+
+.login-page-background {
+  background-image: url("../public/assets/background/welcome-background1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-color: #e7d2a9;
+  position: relative;
+  transition: 5s;
+  animation-name: changing-bg;
+  animation-duration: 8s;
+  animation-direction: alternate-reverse;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+}
+
+@keyframes changing-bg {
+  0% {
+    background-image: url("../public/assets/background/welcome-background1.jpg");
+  }
+  50% {
+    background-image: url("../public/assets/background/welcome-background2.jpg");
+  }
+  100% {
+    background-image: url("../public/assets/background/welcome-background3.jpg");
+  }
+}
+
+.notifications:hover {
+  background-color: rgb(232, 230, 230);
+}
